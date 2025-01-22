@@ -55,3 +55,12 @@ function updateRemoveFromCartEventListener() {
     });
   });
 }
+
+document.querySelector("#purchase").addEventListener("click", function () {
+  fetch("http://localhost:3000/bookings", { method: "PUT" })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      data.result && location.assign("bookings.html");
+    });
+});
