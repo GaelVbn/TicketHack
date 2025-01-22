@@ -2,7 +2,7 @@ function updateTripBookingEventListener() {
   const buttons = document.querySelectorAll(".book");
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      fetch("http://localhost:3000/cart", {
+      fetch("https://ticket-hack-backend-flax.vercel.app/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,7 +26,7 @@ document.querySelector("#search").addEventListener("click", () => {
   const departure = document.querySelector("#departure");
   const arrival = document.querySelector("#arrival");
   fetch(
-    "http://localhost:3000/search/" +
+    "https://ticket-hack-backend-flax.vercel.app/search/" +
       departure.value +
       "/" +
       arrival.value +

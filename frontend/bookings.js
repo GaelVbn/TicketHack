@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/bookings")
+fetch("https://ticket-hack-backend-flax.vercel.app/bookings")
   .then((response) => response.json())
   .then((data) => {
     if (data.result) {

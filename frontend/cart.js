@@ -2,7 +2,7 @@ document.querySelector("#title").addEventListener("click", () => {
   window.location.href = "index.html";
 });
 
-fetch("http://localhost:3000/cart")
+fetch("https://ticket-hack-backend-flax.vercel.app/cart")
   .then((response) => response.json())
   .then((data) => {
     if (data.result) {
@@ -38,7 +38,7 @@ function updateRemoveFromCartEventListener() {
   const deleteButtons = document.querySelectorAll(".delete");
   deleteButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      fetch(`http://localhost:3000/cart/${button.id}`, {
+      fetch(`https://ticket-hack-backend-flax.vercel.app/${button.id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +57,9 @@ function updateRemoveFromCartEventListener() {
 }
 
 document.querySelector("#purchase").addEventListener("click", function () {
-  fetch("http://localhost:3000/bookings", { method: "PUT" })
+  fetch("https://ticket-hack-backend-flax.vercel.app/bookings", {
+    method: "PUT",
+  })
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
