@@ -12,7 +12,12 @@ var bookingsRouter = require("./routes/bookings");
 var app = express();
 
 const cors = require("cors");
-app.use(cors({ origin: "https://ticket-hack-frontend-liard.vercel.app" }));
+app.use(
+  cors({
+    origin: "https://ticket-hack-frontend-liard.vercel.app",
+    credentials: true,
+  })
+);
 
 app.use(logger("dev"));
 app.use(express.json());
