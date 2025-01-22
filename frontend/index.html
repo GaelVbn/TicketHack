@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HT</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a id="title" href="index.html">Tickethack</a></h1>
+      <div class="link-container">
+        <a class="link" href="cart.html">Cart</a>
+        <a class="link" href="bookings.html">Bookings</a>
+      </div>
+    </header>
+
+    <div id="container">
+      <div id="description">
+        <h2>Explore the world effortlessly by train!</h2>
+        <h3>
+          Compare, book and enjoy cheap prices for train tickets: your journey
+          starts on Tickethack.
+        </h3>
+      </div>
+
+      <div class="two-box">
+        <div class="box" id="res-box">
+          <div class="inputs">
+            <input type="text" placeholder="Departure" id="departure" />
+            <div class="divider"></div>
+            <input type="text" placeholder="Arrival" id="arrival" />
+          </div>
+
+          <div class="datebtn">
+            <input type="date" id="start" name="trip-start" />
+          </div>
+
+          <div class="searchbtn">
+            <button id="search">Search</button>
+          </div>
+        </div>
+
+        <div class="box-result" id="box-res">
+          <img id="results-logo" src="images/train.png" />
+          <div class="divider green"></div>
+          <span>It's time to book your future trip.</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Work Sans", sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 8vh;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 92vh;
+  background-color: #f2f4f4;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 5vh;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 200;
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  font-size: 16px;
+  color: #192325;
+}
+
+#title {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #50a990;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #192325;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+#cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  background-color: white;
+  width: 60%;
+  max-height: 400px;
+  overflow: scroll;
+  padding: 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.selected-trip {
+  height: 40px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  background-color: rgb(247, 241, 241);
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.delete {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #50a990;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#cart2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001748;
+  width: 60%;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001748;
+  width: 90%;
+  border-radius: 0px 0px 10px 10px;
+  font-weight: 600;
+}
+
+#purchase {
+  width: 90px;
+  height: 30px;
+  border: none;
+  background-color: #50a990;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}

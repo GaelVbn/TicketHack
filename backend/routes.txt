@@ -1,0 +1,8 @@
+GET /search
+
+POST /cart
+GET /cart
+DELETE /cart
+
+POST /bookings
+GET /bookings

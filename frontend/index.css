@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+}
+
+#title {
+  padding-left: 2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #50a990;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+  padding-right: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #192325;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 92vh;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  color: white;
+}
+
+.two-box {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  width: 60%;
+  padding: 2rem;
+  gap: 10%;
+}
+
+.divider {
+  background-color: #ababab;
+  width: 80%;
+  height: 2px;
+  margin: 0 3%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.box-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 1rem;
+
+  overflow: scroll;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  width: 100%;
+  height: fit-content;
+}
+
+.searchbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.292);
+}
+
+#search {
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  background-color: #50a990;
+  color: white;
+}
+
+.datebtn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10%;
+}
+
+#results-logo {
+  width: 120px;
+}
+
+.trip {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  background-color: rgb(247, 241, 241);
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.book {
+  width: 50px;
+  height: 30px;
+  border: none;
+  background-color: #50a990;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: 600;
+}
+
+#results-logo {
+  width: 120px;
+}
+
+#green {
+  color: #50a990;
+}
