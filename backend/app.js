@@ -1,27 +1,27 @@
-require('dotenv').config();
+require("dotenv").config();
 
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+var express = require("express");
+var path = require("path");
+var cookieParser = require("cookie-parser");
+var logger = require("morgan");
 
-var indexRouter = require('./routes/index');
-var cartRouter = require('./routes/cart');
-var bookingsRouter = require('./routes/bookings');
+var indexRouter = require("./routes/index");
+var cartRouter = require("./routes/cart");
+var bookingsRouter = require("./routes/bookings");
 
 var app = express();
 
-const cors = require('cors');
-app.use(cors());
+const cors = require("cors");
+app.use(cors({ origin: "https://ticket-hack-frontend-liard.vercel.app" }));
 
-app.use(logger('dev'));
+app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.use('/', indexRouter);
-app.use('/cart', cartRouter);
-app.use('/bookings', bookingsRouter);
+app.use("/", indexRouter);
+app.use("/cart", cartRouter);
+app.use("/bookings", bookingsRouter);
 
 module.exports = app;
